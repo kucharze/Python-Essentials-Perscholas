@@ -13,4 +13,5 @@ print("There once was someone who studyed Python \n and they loved it so much th
 
 
 #Take in input from user
-
+name = input("What is your name? ")
+print(f"Hello, {name}!")
