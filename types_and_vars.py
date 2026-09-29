@@ -5,7 +5,6 @@ height = 1.79
 
 print("My name is", name, ", I am", age, "years old, and I am", height, "meters tall.")
 
-#part 2
 print("In 5 years I will be", age + 5, "years old.")
 
 #Area of a rectangle
