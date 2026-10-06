@@ -16,3 +16,5 @@ while i < 50:
     i += 1
 
 print(sum2)
+
+#both loops give the same result, but the for loop is more concise and easier to read. The while loop requires more lines of code and is less efficient.
