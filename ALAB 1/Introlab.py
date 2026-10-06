@@ -13,9 +13,11 @@
 
 #Part 2
 
-print("Hello, World")
+print("Hello, World!")
 print("Welcome to Python programming.")
 
-#Part 3
+#No real issues were encountered when writing this code
+#Python had already been installed on my computer.
 
+#Part 3
 
