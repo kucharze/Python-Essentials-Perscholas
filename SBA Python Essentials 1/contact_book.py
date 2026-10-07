@@ -46,6 +46,7 @@ while True:
         print("All Contacts:")
         for name in contacts.items():
             print(name, ": ", contacts[name])
+            
     elif choice == "3":
         print("Search Contact:")
         name = input("Enter contact name: ")
@@ -57,7 +58,13 @@ while True:
             
     elif choice == "4":
         print("Delete Contact:")
-        pass
+        name = input("Enter contact name: ")
+        if name in contacts:
+            del contacts[name]
+            print("Contact deleted.")
+        else:
+            print("Contact not found.")
+            
     elif choice == "5":
         print("Exiting Contact Book. Goodbye!")
         break
