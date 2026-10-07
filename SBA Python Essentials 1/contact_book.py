@@ -24,14 +24,18 @@ while True:
     
     
     if choice == "1":
+        print("Add New Contact:")
         pass
     elif choice == "2":
         print("All Contacts:")
         for name in contacts.items():
             print(name, ": ", contacts[name])
     elif choice == "3":
+        print("Search Contact:")
         pass
     elif choice == "4":
+        print("Delete Contact:")
         pass
     elif choice == "5":
+        print("Exiting Contact Book. Goodbye!")
         break
