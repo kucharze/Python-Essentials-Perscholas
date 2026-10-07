@@ -10,6 +10,13 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
         pass
     else:
         contacts[name] = phone_number
+        
+        
+def search_contact(name):#Search for a contact by name
+    if name in contacts:
+        return contacts[name]
+    else:
+        return None
 
 
 #Contact Book Menu:
@@ -41,7 +48,13 @@ while True:
             print(name, ": ", contacts[name])
     elif choice == "3":
         print("Search Contact:")
-        pass
+        name = input("Enter contact name: ")
+        phone_number = search_contact(name)
+        if phone_number:
+            print(name, ": ", phone_number)
+        else:
+            print("Contact not found.")
+            
     elif choice == "4":
         print("Delete Contact:")
         pass
