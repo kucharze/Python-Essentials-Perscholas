@@ -33,7 +33,14 @@ def calculate(a, b, operation):
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-operation = input("Enter operation (+, -, *, /): ")
+try:
+    operation = input("Enter operation (+, -, *, /): ")
+except ValueError:
+    print("Invalid operation. Please use +, -, *, or /.")
+    operation = input("Enter operation (+, -, *, /): ")
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed.")
+    operation = input("Enter operation (+, -, *, /): ")
 
 result = calculate(num1, num2, operation)
 
