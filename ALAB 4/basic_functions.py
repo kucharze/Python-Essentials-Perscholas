@@ -16,6 +16,11 @@ def is_even(num):
 
 #All function calls
 greet_user("Zachary")
+sum = add_two_numbers(5, 10)
+print("The sum of 5 and 10 is:", sum)
 print("2 + 3 =", add_two_numbers(2, 3))
-print("5 is even:", is_even(5))
-print("6 is even:", is_even(6))
+
+b1 = is_even(5)
+b2 = is_even(6)
+print("5 is even:", b1)
+print("6 is even:", b2)
