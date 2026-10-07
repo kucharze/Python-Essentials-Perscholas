@@ -12,7 +12,8 @@ def get_average_Grades(grades):
 course_grades = {
     "Math": (85, 92, 78),
     "Science": (90, 88, 95),
-    "History": (95, 92, 88)
+    "History": (95, 92, 88),
+    "English": ()#Will raise ValueError for empty tuple
 }
 
 for courses in course_grades:
