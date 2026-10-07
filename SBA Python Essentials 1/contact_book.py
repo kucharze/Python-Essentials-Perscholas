@@ -4,6 +4,12 @@ contacts = {
     "Jane": ["555-555-5555"]
 }
 
+def add_contact(name, phone_number):
+    if name in contacts:
+        contacts[name].append(phone_number)
+    else:
+        contacts[name] = [phone_number]
+
 
 #Contact Book Menu:
 #1. Add New Contact
@@ -25,7 +31,9 @@ while True:
     
     if choice == "1":
         print("Add New Contact:")
-        pass
+        name = input("Enter contact name: ")
+        phone_number = input("Enter phone number: ")
+        add_contact(name, phone_number)
     elif choice == "2":
         print("All Contacts:")
         for name in contacts.items():
