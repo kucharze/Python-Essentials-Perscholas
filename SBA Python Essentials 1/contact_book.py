@@ -1,14 +1,15 @@
 contacts = {
-    "Zachary": ["123-456-7890"],
-    "John": ["987-654-3210"],
-    "Jane": ["555-555-5555"]
+    "Zachary": "123-456-7890",
+    "John": "987-654-3210",
+    "Jane": "555-555-5555"
 }
 
 def add_contact(name, phone_number):
     if name in contacts:
-        contacts[name].append(phone_number)
+        #No duplicate entries, print an error
+        pass
     else:
-        contacts[name] = [phone_number]
+        contacts[name] = phone_number
 
 
 #Contact Book Menu:
