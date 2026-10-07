@@ -4,7 +4,7 @@ contacts = {
     "Jane": "555-555-5555"
 }
 
-def add_contact(name, phone_number):
+def add_contact(name, phone_number):#Add a new contact to the contacts dictionary
     if name in contacts:
         #No duplicate entries, print an error
         pass
