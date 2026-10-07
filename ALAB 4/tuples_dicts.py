@@ -30,3 +30,10 @@ print(students)  # {'Alice': 85, 'Bob': 92, 'Charlie': 78, 'David': 95, 'Eve': 8
 students["Alice"] = 90
 
 print(students)  # {'Alice': 90, 'Bob': 92, 'Charlie': 78, 'David': 95, 'Eve': 88, 'Frank': 90}
+
+print("")#Used to break up the output for better readability
+
+print("Students and their grades:")
+#print out students in a loop
+for name in students:
+    print(name, ":", students[name])
