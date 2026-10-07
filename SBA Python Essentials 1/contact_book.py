@@ -22,6 +22,13 @@ def search_contact(name):#Search for a contact by name
         return contacts[name]
     else:
         return None
+    
+
+def delete_contact(name):#Delete a contact from the contacts dictionary
+    if name in contacts:
+        del contacts[name]
+    else:
+        print("Contact not found.")
 
 
 #Contact Book Menu:
@@ -63,11 +70,7 @@ while True:
     elif choice == "4":
         print("Delete Contact:")
         name = input("Enter contact name: ")
-        if name in contacts:
-            del contacts[name]
-            print("Contact deleted.")
-        else:
-            print("Contact not found.")
+        delete_contact(name)
             
     elif choice == "5":
         print("Exiting Contact Book. Goodbye!")
