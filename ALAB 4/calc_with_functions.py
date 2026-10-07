@@ -37,4 +37,4 @@ operation = input("Enter operation (+, -, *, /): ")
 
 result = calculate(num1, num2, operation)
 
-print(f"{num1} {operation} {num2} = {result}")
+print(num1, operation, num2, "=", result)
