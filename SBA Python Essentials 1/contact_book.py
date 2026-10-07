@@ -26,7 +26,9 @@ while True:
     if choice == "1":
         pass
     elif choice == "2":
-        pass
+        print("All Contacts:")
+        for name in contacts.items():
+            print(name, ": ", contacts[name])
     elif choice == "3":
         pass
     elif choice == "4":
