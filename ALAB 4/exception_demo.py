@@ -15,3 +15,5 @@ try:
     print(num1, "/", num2, "=", result)
 except ValueError as e:
     print("Error:", e)
+finally:
+    print("Division operation completed!")
