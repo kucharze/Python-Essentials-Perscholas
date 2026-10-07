@@ -25,3 +25,8 @@ students = {
 students["Frank"] = 90
 
 print(students)  # {'Alice': 85, 'Bob': 92, 'Charlie': 78, 'David': 95, 'Eve': 88, 'Frank': 90}
+
+#update an entry
+students["Alice"] = 90
+
+print(students)  # {'Alice': 90, 'Bob': 92, 'Charlie': 78, 'David': 95, 'Eve': 88, 'Frank': 90}
