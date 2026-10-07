@@ -48,33 +48,35 @@ while True:
     print("5. Exit")
     choice = input("Enter your choice (1-5): ")
     
-    
-    if choice == "1":
-        print("Add New Contact:")
-        name = input("Enter contact name: ")
-        phone_number = int(input("Enter phone number: "))
-        add_contact(name, phone_number)
-    elif choice == "2":
-        print("All Contacts:")
-        view_contacts()
-            
-    elif choice == "3":
-        print("Search Contact:")
-        name = input("Enter contact name: ")
-        phone_number = search_contact(name)
-        if phone_number:
-            print(name, ": ", phone_number)
+    try:
+        if choice == "1":
+            print("Add New Contact:")
+            name = input("Enter contact name: ")
+            phone_number = int(input("Enter phone number: "))
+            add_contact(name, phone_number)
+        elif choice == "2":
+            print("All Contacts:")
+            view_contacts()
+                
+        elif choice == "3":
+            print("Search Contact:")
+            name = input("Enter contact name: ")
+            phone_number = search_contact(name)
+            if phone_number:
+                print(name, ": ", phone_number)
+            else:
+                print("Contact not found.")
+                
+        elif choice == "4":
+            print("Delete Contact:")
+            name = input("Enter contact name: ")
+            delete_contact(name)
+                
+        elif choice == "5":
+            print("Exiting Contact Book. Goodbye!")
+            break
+        
         else:
-            print("Contact not found.")
-            
-    elif choice == "4":
-        print("Delete Contact:")
-        name = input("Enter contact name: ")
-        delete_contact(name)
-            
-    elif choice == "5":
-        print("Exiting Contact Book. Goodbye!")
-        break
-    
-    else:
-        print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 5.")
+    except ValueError:
+        print("Invalid input. Please enter a number between 1 and 5.")
