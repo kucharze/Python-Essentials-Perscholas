@@ -12,6 +12,11 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
         contacts[name] = phone_number
         
         
+def view_contacts():#View all contacts in the contacts dictionary
+    for name, phone_number in contacts.items():
+        print(name, ": ", phone_number)
+        
+        
 def search_contact(name):#Search for a contact by name
     if name in contacts:
         return contacts[name]
@@ -44,8 +49,7 @@ while True:
         add_contact(name, phone_number)
     elif choice == "2":
         print("All Contacts:")
-        for name in contacts.items():
-            print(name, ": ", contacts[name])
+        view_contacts()
             
     elif choice == "3":
         print("Search Contact:")
