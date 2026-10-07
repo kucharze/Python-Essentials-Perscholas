@@ -7,7 +7,7 @@ contacts = {
 def add_contact(name, phone_number):#Add a new contact to the contacts dictionary
     if name in contacts:
         #No duplicate entries, print an error
-        pass
+        print("Contact already exists.")
     else:
         contacts[name] = phone_number
         
@@ -80,3 +80,5 @@ while True:
             print("Invalid choice. Please enter a number between 1 and 5.")
     except ValueError:
         print("Invalid input. Please enter a number between 1 and 5.")
+    except Exception as e:
+        print("An unexpected error occurred:", e)
