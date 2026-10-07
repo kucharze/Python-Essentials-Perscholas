@@ -1,7 +1,7 @@
 contacts = {
-    "Zachary": "123-456-7890",
-    "John": "987-654-3210",
-    "Jane": "555-555-5555"
+    "Zachary": 1234567890,
+    "John": 9876543210,
+    "Jane": 5555555555
 }
 
 def add_contact(name, phone_number):#Add a new contact to the contacts dictionary
@@ -52,7 +52,7 @@ while True:
     if choice == "1":
         print("Add New Contact:")
         name = input("Enter contact name: ")
-        phone_number = input("Enter phone number: ")
+        phone_number = int(input("Enter phone number: "))
         add_contact(name, phone_number)
     elif choice == "2":
         print("All Contacts:")
