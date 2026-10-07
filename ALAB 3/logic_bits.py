@@ -9,6 +9,7 @@ print("not b1:", not b1)
 print("Demonstrating bitwise operations on integers.")
 x = int(input("Enter the first integer: "))
 y = int(input("Enter the second integer: "))
+#bin function is used to convert an integer to its binary representation
 print("x & y:", bin(x & y))
 print("x | y:", bin(x | y))
 print("x ^ y:", bin(x ^ y))
