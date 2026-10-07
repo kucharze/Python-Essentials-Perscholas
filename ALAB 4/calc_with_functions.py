@@ -30,3 +30,11 @@ def calculate(a, b, operation):
         return "Error: Invalid operation. Please use +, -, *, or /."
     
     
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+operation = input("Enter operation (+, -, *, /): ")
+
+result = calculate(num1, num2, operation)
+
+print(f"{num1} {operation} {num2} = {result}")
