@@ -9,3 +9,13 @@ try:
     months[0] = "Jan"
 except TypeError as e:
     print("Cannot modify tuples. Error:", e)  # 'tuple' object does not support item assignment
+    
+
+#Dictionary of students and their grades
+students = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 95,
+    "Eve": 88
+}
