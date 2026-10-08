@@ -1,0 +1,26 @@
+A brief write-up (can be comments in the code or a separate document) 
+explaining how you structured your program (what functions you used, 
+how data flows, any challenges faced and how you solved them):
+
+Functions used:
+I used separate functions for each individual operation in the program.
+- add_contact
+- view_contacts
+- search_contact
+- delete_contact
+
+
+How data flows?:
+
+
+
+
+Any challenges faced and how I solved them:
+
+
+
+
+
+
+
+Example interaction logs:
