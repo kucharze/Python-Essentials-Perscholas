@@ -12,7 +12,7 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
         return
     
     if name in contacts:
-        #No duplicate entries, print an error
+        #Duplicate entry, ask user if they want to add another phone number for this contact
         print("Contact already exists.")
         option = input("Add another phone number for this contact? (yes/no): ")
         if option == "yes":
