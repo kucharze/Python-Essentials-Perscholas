@@ -43,8 +43,7 @@ def search_contact(name):#Search for a contact by name
     else:
         return None
     
-    print("")
-    print("")
+    
     
 
 def delete_contact(name):#Delete a contact from the contacts dictionary
@@ -96,6 +95,9 @@ while True:
                 print(name, ": ", phone_number)
             else:
                 print("Contact not found.")
+            
+            print("")
+            print("")
                 
         elif choice == "4":
             print("")
