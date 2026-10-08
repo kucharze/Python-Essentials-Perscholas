@@ -18,11 +18,13 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
         option = input("Add another phone number for this contact? (yes/no): ")
         if option == "yes":
             contacts[name].append(phone_number)
+            print("Contact added successfully.")
     else:
         #Add the new contact
         contacts[name] = [phone_number]
+        print("Contact added successfully.")
     
-    print("Contact added successfully.")
+    
     print("")
         
         
@@ -49,6 +51,7 @@ def delete_contact(name):#Delete a contact from the contacts dictionary
     
     if name in contacts:
         del contacts[name]
+        print("Contact deleted successfully.")
     else:
         print("Contact not found.")
     print("")
