@@ -14,6 +14,9 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
             contacts[name].append(phone_number)
     else:
         contacts[name] = [phone_number]
+    
+    print("Contact added successfully.")
+    print("")
         
         
 def view_contacts():#View all contacts in the contacts dictionary
@@ -33,6 +36,9 @@ def search_contact(name):#Search for a contact by name
     else:
         return None
     
+    print("")
+    print("")
+    
 
 def delete_contact(name):#Delete a contact from the contacts dictionary
     
@@ -40,6 +46,8 @@ def delete_contact(name):#Delete a contact from the contacts dictionary
         del contacts[name]
     else:
         print("Contact not found.")
+    print("")
+    print("")
 
 
 #Contact Book Menu:
