@@ -18,7 +18,8 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
         
 def view_contacts():#View all contacts in the contacts dictionary
     
-    for name, phone_number in contacts.items():
+    conts = dict(sorted(contacts.items()))#Sort the contacts dictionary by name
+    for name, phone_number in conts.items():
         print(name, ": ", phone_number)
         
     print("")
