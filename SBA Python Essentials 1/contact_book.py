@@ -5,6 +5,7 @@ contacts = {
 }
 
 def add_contact(name, phone_number):#Add a new contact to the contacts dictionary
+    
     if name in contacts:
         #No duplicate entries, print an error
         print("Contact already exists.")
@@ -13,6 +14,7 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
         
         
 def view_contacts():#View all contacts in the contacts dictionary
+    
     for name, phone_number in contacts.items():
         print(name, ": ", phone_number)
         
@@ -54,6 +56,7 @@ while True:
             name = input("Enter contact name: ")
             phone_number = int(input("Enter phone number: "))
             add_contact(name, phone_number)
+            
         elif choice == "2":
             print("All Contacts:")
             view_contacts()
@@ -79,6 +82,6 @@ while True:
         else:
             print("Invalid choice. Please enter a number between 1 and 5.")
     except ValueError:
-        print("Invalid input option received.")
+        print("Invalid input option received.  Please enter a valid number.")
     except Exception as e:
         print("An unexpected error occurred:", e)
