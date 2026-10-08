@@ -11,16 +11,28 @@ I used separate functions for each individual operation in the program.
 
 
 How data flows?:
+Data flows in the following steps
+- User selects an operation
+- User inputs any necessary data so that the program can perfrom that operation
+- The program will attempt to perfrom that operation
+- The operation will either succeed or fail.
 
+This process continues until the user exits the program
 
 
 
 Any challenges faced and how I solved them:
 
+The hardest challenge that I faced was determining how best to structure code
+to best work in any necessary features required.  The basics feaures were not
+too hard, but afterwards, I had to determine where to set up try/catch blocks
+and to establish how best to check validity of phone numbers.  An additional
+tricky part was when I updated the program to use lists of phone numbers in
+the list of contacts.
 
-
-
-
+In the end, I was able to determine solutions for placement and execution
+that allowed for the simplist coding while still allowing the code to work.
 
 
 Example interaction logs:
+
