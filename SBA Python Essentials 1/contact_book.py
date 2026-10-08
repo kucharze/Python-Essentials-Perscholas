@@ -79,6 +79,6 @@ while True:
         else:
             print("Invalid choice. Please enter a number between 1 and 5.")
     except ValueError:
-        print("Invalid input. Please enter a number between 1 and 5.")
+        print("Invalid input option received.")
     except Exception as e:
         print("An unexpected error occurred:", e)
