@@ -9,6 +9,7 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
     #Check if the phone number is valid
     if phone_number < 1000000000 or phone_number > 9999999999:
         print("Invalid phone number. Please enter a 10-digit number.")
+        print("")
         return
     
     if name in contacts:
