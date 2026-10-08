@@ -34,5 +34,140 @@ In the end, I was able to determine solutions for placement and execution
 that allowed for the simplist coding while still allowing the code to work.
 
 
+
 Example interaction logs:
 
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 2
+
+All Contacts:
+Jane :  [5555555555]
+John :  [9876543210]
+Zachary :  [1234567890]
+
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 1 
+
+Add New Contact:
+Enter contact name: Marvin
+Enter phone number: 2223334455
+Contact added successfully.
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 1
+
+Add New Contact:
+Enter contact name: Zachary
+Enter phone number: 4445556677
+Contact already exists.
+Add another phone number for this contact? (yes/no): yes
+Contact added successfully.
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 2
+
+All Contacts:
+Jane :  [5555555555]
+John :  [9876543210]
+Marvin :  [2223334455]
+Zachary :  [1234567890, 4445556677]
+
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 1
+
+Add New Contact:
+Enter contact name: Zachary
+Enter phone number: 2345678901
+Contact already exists.
+Add another phone number for this contact? (yes/no): no
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 2
+
+All Contacts:
+Jane :  [5555555555]
+John :  [9876543210]
+Marvin :  [2223334455]
+Zachary :  [1234567890, 4445556677]
+
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 3
+
+Search Contact:
+Enter contact name: John
+John :  [9876543210]
+
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 3
+
+Search Contact:
+Enter contact name: Zack
+Contact not found.
+
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 4
+
+Delete Contact:
+Enter contact name: Jane
+Contact deleted successfully.
+
+
+Contact Book Menu:
+1. Add New Contact
+2. View All Contacts
+3. Search Contact
+4. Delete Contact
+5. Exit
+Enter your choice (1-5): 5
+
+Exiting Contact Book. Goodbye!
