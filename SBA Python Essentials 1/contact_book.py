@@ -1,7 +1,7 @@
 contacts = {
-    "Zachary": 1234567890,
-    "John": 9876543210,
-    "Jane": 5555555555
+    "Zachary": [1234567890],
+    "John": [9876543210],
+    "Jane": [5555555555]
 }
 
 def add_contact(name, phone_number):#Add a new contact to the contacts dictionary
@@ -9,8 +9,11 @@ def add_contact(name, phone_number):#Add a new contact to the contacts dictionar
     if name in contacts:
         #No duplicate entries, print an error
         print("Contact already exists.")
+        option = input("Add another phone number for this contact? (yes/no): ")
+        if option == "yes":
+            contacts[name].append(phone_number)
     else:
-        contacts[name] = phone_number
+        contacts[name] = [phone_number]
         
         
 def view_contacts():#View all contacts in the contacts dictionary
@@ -20,6 +23,7 @@ def view_contacts():#View all contacts in the contacts dictionary
         
         
 def search_contact(name):#Search for a contact by name
+    
     if name in contacts:
         return contacts[name]
     else:
@@ -27,6 +31,7 @@ def search_contact(name):#Search for a contact by name
     
 
 def delete_contact(name):#Delete a contact from the contacts dictionary
+    
     if name in contacts:
         del contacts[name]
     else:
