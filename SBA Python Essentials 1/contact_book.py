@@ -21,6 +21,9 @@ def view_contacts():#View all contacts in the contacts dictionary
     for name, phone_number in contacts.items():
         print(name, ": ", phone_number)
         
+    print("")
+    print("")
+        
         
 def search_contact(name):#Search for a contact by name
     
@@ -57,16 +60,19 @@ while True:
     
     try:
         if choice == "1":
+            print("")
             print("Add New Contact:")
             name = input("Enter contact name: ")
             phone_number = int(input("Enter phone number: "))
             add_contact(name, phone_number)
             
         elif choice == "2":
+            print("")
             print("All Contacts:")
             view_contacts()
                 
         elif choice == "3":
+            print("")
             print("Search Contact:")
             name = input("Enter contact name: ")
             phone_number = search_contact(name)
@@ -76,11 +82,13 @@ while True:
                 print("Contact not found.")
                 
         elif choice == "4":
+            print("")
             print("Delete Contact:")
             name = input("Enter contact name: ")
             delete_contact(name)
                 
         elif choice == "5":
+            print("")
             print("Exiting Contact Book. Goodbye!")
             break
         
