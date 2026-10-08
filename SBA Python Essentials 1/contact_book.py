@@ -44,7 +44,6 @@ def search_contact(name):#Search for a contact by name
         return None
     
     
-    
 
 def delete_contact(name):#Delete a contact from the contacts dictionary
     
