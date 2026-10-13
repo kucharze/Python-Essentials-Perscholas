@@ -8,5 +8,5 @@ print(rand)
 
 
 #Calculate the square root of the random number
-sqrt = math.sqrt(rand)
+sqrt = math.floor(math.sqrt(rand))
 print(sqrt)
