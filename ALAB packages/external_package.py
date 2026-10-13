@@ -1,3 +1,4 @@
+#Requires colorama package to be installed. You can install it using pip:
 import colorama
 
 colorama.init()
