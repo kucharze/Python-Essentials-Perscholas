@@ -1,6 +1,6 @@
 nums = [2,4,67,23,11,90,34,56,78,123,5,6,7,8,9,10]
 
-while true:
+while True:
     print("Choose an option:")
     print("1. Add a number")
     print("2. Remove a number")
