@@ -17,11 +17,12 @@ while true:
             nums.append(num)
             
         elif option == "2":
-            num = int(input("Enter a number: "))
-            if num in nums:
-                nums.remove(num)
+            num = int(input("Enter a list position: "))
+            if 0 <= num < len(nums):
+                nums.pop(num)
             else:
-                print("Number not found.")
+                print("Index out of range.")
+                raise IndexError("Index out of range.")
                 
         elif option == "3":
             print("Numbers in the list:")
