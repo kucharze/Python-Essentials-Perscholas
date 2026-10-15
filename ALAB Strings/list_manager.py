@@ -7,22 +7,34 @@ while true:
     print("3. Display numbers")
     print("4. Exit")
     
-    option = input("Enter your choice: ")
     
-    if option == "1":
-        num = int(input("Enter a number: "))
-        nums.append(num)
-    elif option == "2":
-        num = int(input("Enter a number: "))
-        if num in nums:
-            nums.remove(num)
+    
+    try:
+        option = input("Enter your choice: ")
+        
+        if option == "1":
+            num = int(input("Enter a number: "))
+            nums.append(num)
+            
+        elif option == "2":
+            num = int(input("Enter a number: "))
+            if num in nums:
+                nums.remove(num)
+            else:
+                print("Number not found.")
+                
+        elif option == "3":
+            print("Numbers in the list:")
+            for n in nums:
+                print(n)
+                
+        elif option == "4":
+            break
         else:
-            print("Number not found.")
-    elif option == "3":
-        print("Numbers in the list:")
-        for n in nums:
-            print(n)
-    elif option == "4":
-        break
-    else:
-        print("Invalid option. Please try again.")
+            print("Invalid option. Please try again.")
+            
+    except IndexError: #Error for index out of range
+        print("Index out of range. Please try again.")
+        
+    except ValueError: #Error for invalid input
+        print("Invalid input. Please enter a valid number.")
