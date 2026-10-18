@@ -25,10 +25,12 @@ while True:
                 raise IndexError("Index out of range.")
                 
         elif option == "3":
+            print("")
             print("Numbers in the list:")
             for n in nums:
-                print(n)
-                
+                print(n, end = " ")
+            print("")  # Print a newline after displaying all numbers
+
         elif option == "4":
             break
         else:
