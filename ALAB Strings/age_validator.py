@@ -14,3 +14,14 @@ def validate_age(age):
     raise ValueError("Age must be an integer between 0 and 120.")
     
     return False
+
+
+age = input("Enter your age: ")
+try:
+    age = int(age)
+    if validate_age(age):
+        print("Valid age.")
+    else:
+        print("Invalid age.")
+except ValueError:
+    print("Invalid input. Please enter a valid integer for age.")
