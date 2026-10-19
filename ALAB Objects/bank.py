@@ -25,3 +25,9 @@ class BankAccount:
         
     def __str__(self):
         return f"BankAccount(owner={self.owner}, account_number={self.account_number}, balance={self.balance})"
+    
+    
+
+bank_account = BankAccount("John Doe", "123456789", 1000)
+
+print(bank_account)
