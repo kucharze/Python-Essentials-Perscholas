@@ -21,3 +21,7 @@ class BankAccount:
                 raise ValueError("Insufficient funds.")
         else:
             raise ValueError("Withdrawal amount must be positive.")
+        
+        
+    def __str__(self):
+        return f"BankAccount(owner={self.owner}, account_number={self.account_number}, balance={self.balance})"
