@@ -1,14 +1,18 @@
 import os
 import datetime
 
-#Check if diary.txt exists, if not create it
-if not os.path.exists("diary.txt"):
-    with open("diary.txt", "w") as f:
-        f.write("Diary created.\n")
+try:
+    #Check if diary.txt exists, if not create it
+    if not os.path.exists("diary.txt"):
+        with open("diary.txt", "w") as f:
+            f.write("Diary created.\n")
+            
+            
+    with open("diary.txt", "a") as f:
+        entry = input("Enter your diary entry: ")
+        f.write(str(datetime.datetime.now()) + "\n")
+        f.write(entry + "\n")
+        f.write("Diary updated.\n")
         
-        
-with open("diary.txt", "a") as f:
-    entry = input("Enter your diary entry: ")
-    f.write(str(datetime.datetime.now()) + "\n")
-    f.write(entry + "\n")
-    f.write("Diary updated.\n")
+except Exception as e:
+    print(f"An error occurred: {e}")
