@@ -6,3 +6,7 @@ if not os.path.exists("diary.txt"):
         f.write("Diary created.\n")
         
         
+with open("diary.txt", "a") as f:
+    entry = input("Enter your diary entry: ")
+    f.write(entry + "\n")
+    f.write("Diary updated.\n")
