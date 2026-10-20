@@ -41,7 +41,15 @@ class SavingsAccount(BankAccount):
     def __str__(self):
         return f"SavingsAccount(owner={self.owner}, account_number={self.account_number}, balance={self.balance}, interest_rate={self.interest_rate})"
 
-    
+
+#Custom exception for insufficient funds
+class InsufficientFundsError(Exception):
+    def __init__(self, message="Insufficient funds in the account."):
+        self.message = message
+        super().__init__(self.message)
+        
+        
+        
 
 bank_account = BankAccount("John Doe", "123456789", 1000)
 
