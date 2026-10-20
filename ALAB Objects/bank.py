@@ -26,6 +26,18 @@ class BankAccount:
     def __str__(self):
         return f"BankAccount(owner={self.owner}, account_number={self.account_number}, balance={self.balance})"
     
+
+#Savings account class that inherits from BankAccount
+class SavingsAccount(BankAccount):
+    def __init__(self, owner, account_number, balance=0, interest_rate=0.01):
+        super().__init__(owner, account_number, balance)
+        self.interest_rate = interest_rate
+        
+    def apply_interest(self):
+        interest = self.balance * self.interest_rate
+        self.balance += interest
+        print(f"Applied interest of {interest}. New balance is {self.balance}.")
+
     
 
 bank_account = BankAccount("John Doe", "123456789", 1000)
