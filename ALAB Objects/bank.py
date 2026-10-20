@@ -54,13 +54,14 @@ class InsufficientFundsError(Exception):
 bank_account = BankAccount("John Doe", "123456789", 1000)
 
 print(bank_account)
-
-#Deposit and withdraw some money
-bank_account.deposit(500)
-bank_account.withdraw(200)
-
-#Try to withdraw more money than available
 try:
+    #Deposit and withdraw some money
+    bank_account.deposit(500)
+    bank_account.withdraw(200)
+
+    #Try to withdraw more money than available
     bank_account.withdraw(1500)
+except InsufficientFundsError as e:
+    print(e)
 except ValueError as e:
     print(e)
