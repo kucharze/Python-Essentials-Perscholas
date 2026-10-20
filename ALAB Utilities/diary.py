@@ -1,5 +1,4 @@
 import os
-import calendar
 import datetime
 
 #Check if diary.txt exists, if not create it
