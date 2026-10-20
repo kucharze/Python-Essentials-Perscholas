@@ -37,6 +37,9 @@ class SavingsAccount(BankAccount):
         interest = self.balance * self.interest_rate
         self.balance += interest
         print(f"Applied interest of {interest}. New balance is {self.balance}.")
+        
+    def __str__(self):
+        return f"SavingsAccount(owner={self.owner}, account_number={self.account_number}, balance={self.balance}, interest_rate={self.interest_rate})"
 
     
 
