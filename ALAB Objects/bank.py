@@ -18,7 +18,7 @@ class BankAccount:
                 self.balance -= amount
                 print(f"Withdrew {amount}. New balance is {self.balance}.")
             else:
-                raise ValueError("Insufficient funds.")
+                raise InsufficientFundsError()
         else:
             raise ValueError("Withdrawal amount must be positive.")
         
