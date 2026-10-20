@@ -31,3 +31,13 @@ class BankAccount:
 bank_account = BankAccount("John Doe", "123456789", 1000)
 
 print(bank_account)
+
+#Deposit and withdraw some money
+bank_account.deposit(500)
+bank_account.withdraw(200)
+
+#Try to withdraw more money than available
+try:
+    bank_account.withdraw(1500)
+except ValueError as e:
+    print(e)
