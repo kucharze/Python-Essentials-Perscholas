@@ -9,5 +9,6 @@ if not os.path.exists("diary.txt"):
         
 with open("diary.txt", "a") as f:
     entry = input("Enter your diary entry: ")
+    f.write(str(datetime.datetime.now()) + "\n")
     f.write(entry + "\n")
     f.write("Diary updated.\n")
