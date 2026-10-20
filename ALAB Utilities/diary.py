@@ -18,5 +18,5 @@ try:
     with open("diary.txt", "r") as f:
         print(f.read())
         
-except Exception as e:
+except IOError as e:
     print(f"An error occurred: {e}")
