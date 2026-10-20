@@ -15,4 +15,4 @@ print("Current date and time: ", current_date)
 
 #Check if the current year and month match the user input
 if current_date.year == year and current_date.month == month:
-    print("Today is: ", current_date.day, current_date.month, current_date.year)
+    print("Today is: ", current_date.month, current_date.day, current_date.year)
