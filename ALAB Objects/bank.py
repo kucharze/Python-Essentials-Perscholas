@@ -62,6 +62,6 @@ try:
     #Try to withdraw more money than available
     bank_account.withdraw(1500)
 except InsufficientFundsError as e:
-    print(e)
+    print("Insufficient funds error:", e)
 except ValueError as e:
-    print(e)
+    print("Value error:", e)
