@@ -12,3 +12,11 @@ def add_task(task_list, title, due_date=None):
             print(f"Task '{title}' added without a due date.")
     except Exception as e:
         print(f"Error adding task: {e}")
+        
+def complete_task(task_list, index):
+    if 0 <= index < len(task_list):
+        task = task_list[index]
+        task.completed = True
+        print(f"Task '{task.title}' marked as completed.")
+    else:
+        print("Invalid task index.")
