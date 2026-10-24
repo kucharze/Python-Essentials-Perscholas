@@ -11,6 +11,7 @@ def add_task(task_list, title, due_date=None):
         else:
             print(f"Task '{title}' added without a due date.")
     except Exception as e:
+        #For catching parsing errors and other excetions
         print(f"Error adding task: {e}")
         
 def complete_task(task_list, index):
@@ -20,3 +21,15 @@ def complete_task(task_list, index):
         print(f"Task '{task.title}' marked as completed.")
     else:
         print("Invalid task index.")
+        
+        
+def delete_task(task_list, index):
+    try:
+        if 0 <= index < len(task_list):
+            task = task_list.pop(index)
+            print(f"Task '{task.title}' deleted.")
+        else:
+            print("Invalid task index.")
+    except Exception as e:
+        #For Catching invalid indax errors and other exceptions
+        print(f"Error deleting task: {e}")
