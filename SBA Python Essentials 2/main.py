@@ -14,20 +14,21 @@ while True:
     
     choice = input("Enter your choice: ")
     
-    if choice == "A":
+    if choice == "A":#Add a task
         task = input("Enter the task: ")
         todolist.add_task(task_list, task)
         
-    elif choice == "C":
+    elif choice == "C":#Mark a task as completed
         index = int(input("Enter the index of the task to mark as completed: "))
         todolist.complete_task(task_list, index)
         
-    elif choice == "D":
+    elif choice == "D":#Delete a task from the list
         index = int(input("Enter the index of the task to delete: "))
         todolist.delete_task(task_list, index)
         
-    elif choice == "L":
+    elif choice == "L":#List out the tasks in the list
         todolist.list_tasks(task_list)
-    elif choice == "Q":
+        
+    elif choice == "Q":#Quit the application
         print("Exiting the To-Do List App. Goodbye!")
         break
