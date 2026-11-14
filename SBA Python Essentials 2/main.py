@@ -2,6 +2,16 @@ import task
 import todolist
 print("Welcome to the To-Do List App!")
 
+with open("tasks.txt", "r") as file:
+    for line in file:
+        title, due_date_str, completed_str = line.strip().split(",")
+        due_date = datetime.datetime.strptime(due_date_str, "%Y-%m-%d") if due_date_str else None
+        completed = completed_str == "True"
+        task_obj = task.Task(title, due_date)
+        task_obj.completed = completed
+        todolist.task_list.append(task_obj)
+        
+
 task_list = []
 
 while True:
@@ -32,3 +42,7 @@ while True:
     elif choice == "Q":#Quit the application
         print("Exiting application. Goodbye!")
         break
+    
+    
+    else:
+        print("Invalid choice. Please try again.")
