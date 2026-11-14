@@ -1,3 +1,5 @@
+import task
+import todolist
 print("Welcome to the To-Do List App!")
 
 task_list = []
@@ -14,7 +16,18 @@ while True:
     
     if choice == "A":
         task = input("Enter the task: ")
-        task_list.append({"title": task, "completed": False})
+        todolist.add_task(task_list, task)
+        
+    elif choice == "C":
+        index = int(input("Enter the index of the task to mark as completed: "))
+        todolist.complete_task(task_list, index)
+        
+    elif choice == "D":
+        index = int(input("Enter the index of the task to delete: "))
+        todolist.delete_task(task_list, index)
+        
+    elif choice == "L":
+        todolist.list_tasks(task_list)
     elif choice == "Q":
         print("Exiting the To-Do List App. Goodbye!")
         break
