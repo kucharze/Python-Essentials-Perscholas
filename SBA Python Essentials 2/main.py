@@ -30,5 +30,5 @@ while True:
         todolist.list_tasks(task_list)
         
     elif choice == "Q":#Quit the application
-        print("Exiting the To-Do List App. Goodbye!")
+        print("Exiting application. Goodbye!")
         break
