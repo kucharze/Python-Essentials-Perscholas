@@ -33,3 +33,19 @@ def delete_task(task_list, index):
     except Exception as e:
         #For Catching invalid indax errors and other exceptions
         print(f"Error deleting task: {e}")
+        
+        
+def list_tasks(task_list):
+    if not task_list:
+        print("No tasks in the list.")
+        return
+
+    for index, task in enumerate(task_list):
+        status = "Completed" if task.completed else "Pending"
+        due_date = task.due_date.strftime("%Y-%m-%d") if task.due_date else "No due date"
+        
+        overdue = ""
+        if task.due_date and task.due_date < datetime.datetime.now():
+            overdue = "(Overdue)"
+            
+        print(f"{index}. {task.title} - {status} - Due: {due_date} {overdue}")
