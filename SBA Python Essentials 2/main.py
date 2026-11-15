@@ -47,3 +47,9 @@ while True:
     
     else:
         print("Invalid choice. Please try again.")
+        
+#save the tasks to a file
+with open("tasks.txt", "w") as file:
+    for task in task_list:
+        due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else ""
+        file.write(f"{task.title},{due_date_str},{task.completed}\n")
