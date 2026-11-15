@@ -3,6 +3,8 @@ from mypackage import todolist
 import datetime
 print("Welcome to the To-Do List App!")
 
+task_list = []
+
 with open("tasks.txt", "r") as file:
     for line in file:
         title, due_date_str, completed_str = line.strip().split(",")
@@ -10,10 +12,8 @@ with open("tasks.txt", "r") as file:
         completed = completed_str == "True"
         task_obj = task.Task(title, due_date)
         task_obj.completed = completed
-        todolist.task_list.append(task_obj)
+        task_list.append(task_obj)
         
-
-task_list = []
 
 while True:
     print("\nChoose an option:")
