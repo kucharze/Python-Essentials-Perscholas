@@ -17,7 +17,6 @@ try:
 except FileNotFoundError:
     print("No existing task file found. Starting with an empty task list.")
     
-        
 
 while True:
     print("\nChoose an option:")
@@ -52,8 +51,13 @@ while True:
     else:
         print("Invalid choice. Please try again.")
         
-#save the tasks to a file
-with open("tasks.txt", "w") as file:
-    for task in task_list:
-        due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else ""
-        file.write(f"{task.title},{due_date_str},{task.completed}\n")
+
+try:
+    #save the tasks to a file
+    with open("tasks.txt", "w") as file:
+        for task in task_list:
+            due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else ""
+            file.write(f"{task.title},{due_date_str},{task.completed}\n")
+            
+except IOError as e:
+    print(f"An error occurred while saving the file: {e}")
