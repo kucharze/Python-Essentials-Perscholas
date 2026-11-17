@@ -1,6 +1,8 @@
 from mypackage import task
 from mypackage import todolist
 import datetime
+import colorama
+colorama.init()
 print("Welcome to the To-Do List App!")
 
 task_list = []
@@ -15,7 +17,7 @@ try:
                 task_obj.completed = completed
                 task_list.append(task_obj)
 except FileNotFoundError:
-    print("No existing task file found. Starting with an empty task list.")
+    print(colorama.Fore.YELLOW + "No existing task file found. Starting with an empty task list." + colorama.Style.RESET_ALL)
     
 
 while True:
@@ -47,7 +49,6 @@ while True:
         print("Exiting application. Goodbye!")
         break
     
-    
     else:
         print("Invalid choice. Please try again.")
         
@@ -60,4 +61,4 @@ try:
             file.write(f"{task.title},{due_date_str},{task.completed}\n")
             
 except IOError as e:
-    print(f"An error occurred while saving the file: {e}")
+    print(colorama.Fore.RED + f"An error occurred while saving the file: {e}" + colorama.Style.RESET_ALL)
