@@ -3,8 +3,8 @@ import datetime
 
 def add_task(task_list, title, due_date=None):
     try:
-        task = task.Task(title, due_date)
-        task_list.append(task)
+        taskoption = task.Task(title, due_date)
+        task_list.append(taskoption)
         if due_date:
             due_date = due_date.strftime("%Y-%m-%d")
             print(f"Task '{title}' added with due date {due_date}.")
