@@ -1,5 +1,5 @@
-from mypackage import task
-from mypackage import todolist
+import task
+import todolist
 import datetime
 import colorama
 colorama.init()
