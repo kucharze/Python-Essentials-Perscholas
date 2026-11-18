@@ -44,6 +44,9 @@ while True:
         todolist.add_task(task_list, task, due_date)
         
     elif choice == "C":#Mark a task as completed
+        #List the tasks before asking for the index to mark as completed
+        todolist.list_tasks(task_list)
+        
         index = int(input("Enter the index of the task to mark as completed: "))
         todolist.complete_task(task_list, index)
         
