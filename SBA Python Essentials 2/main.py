@@ -32,7 +32,15 @@ while True:
     
     if choice == "A":#Add a task
         task = input("Enter the task: ")
-        todolist.add_task(task_list, task)
+        due_date_input = input("Enter the due date (YYYY-MM-DD) or leave blank for no due date: ")
+        due_date = None
+        if due_date_input != "":
+            try:
+                due_date = datetime.datetime.strptime(due_date_input, "%Y-%m-%d")
+            except ValueError:
+                print(colorama.Fore.RED + "Invalid date format. Task will be added without a due date." + colorama.Style.RESET_ALL)
+                
+        todolist.add_task(task_list, task, due_date)
         
     elif choice == "C":#Mark a task as completed
         index = int(input("Enter the index of the task to mark as completed: "))
