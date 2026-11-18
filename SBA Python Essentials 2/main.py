@@ -28,7 +28,7 @@ while True:
     print(colorama.Fore.CYAN + "L. List all tasks" + colorama.Style.RESET_ALL)
     print(colorama.Fore.CYAN + "Q. Quit" + colorama.Style.RESET_ALL)
     
-    choice = input("Enter your choice: ")
+    choice = input("Enter your choice: ").upper()
     
     if choice == "A":#Add a task
         task = input("Enter the task: ")
@@ -52,7 +52,7 @@ while True:
     else:
         print(colorama.Fore.RED + "Invalid choice. Please try again." + colorama.Style.RESET_ALL)
 
-save_tasks = input("Would you like to save your tasks to a file? (Y/N): ")
+save_tasks = input("Would you like to save your tasks to a file? (Y/N): ").upper()
 if save_tasks.upper() == "Y":
     try:
         #save the tasks to a file
