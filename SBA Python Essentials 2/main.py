@@ -11,7 +11,7 @@ try:
     with open("tasks.txt", "r") as file:
         for line in file:
                 title, due_date_str, completed_str = line.strip().split(",")
-                due_date = datetime.datetime.strptime(due_date_str, "%Y-%m-%d") if due_date_str else None
+                due_date = datetime.datetime.strptime(due_date_str, "%Y-%m-%d") if due_date_str != "No due date" else None
                 completed = completed_str == "True"
                 task_obj = task.Task(title, due_date)
                 task_obj.completed = completed
@@ -58,7 +58,7 @@ if save_tasks.upper() == "Y":
         #save the tasks to a file
         with open("tasks.txt", "w") as file:
             for task in task_list:
-                due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else ""
+                due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else "No due date"
                 file.write(f"{task.title},{due_date_str},{task.completed}\n")
                 
     except IOError as e:
