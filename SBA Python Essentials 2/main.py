@@ -52,12 +52,14 @@ while True:
     else:
         print(colorama.Fore.RED + "Invalid choice. Please try again." + colorama.Style.RESET_ALL)
 
-try:
-    #save the tasks to a file
-    with open("tasks.txt", "w") as file:
-        for task in task_list:
-            due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else ""
-            file.write(f"{task.title},{due_date_str},{task.completed}\n")
-            
-except IOError as e:
-    print(colorama.Fore.RED + f"An error occurred while saving the file: {e}" + colorama.Style.RESET_ALL)
+save_tasks = input("Would you like to save your tasks to a file? (Y/N): ")
+if save_tasks.upper() == "Y":
+    try:
+        #save the tasks to a file
+        with open("tasks.txt", "w") as file:
+            for task in task_list:
+                due_date_str = task.due_date.strftime("%Y-%m-%d") if task.due_date else ""
+                file.write(f"{task.title},{due_date_str},{task.completed}\n")
+                
+    except IOError as e:
+        print(colorama.Fore.RED + f"An error occurred while saving the file: {e}" + colorama.Style.RESET_ALL)
