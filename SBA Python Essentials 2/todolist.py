@@ -1,5 +1,7 @@
 import task
 import datetime
+import colorama
+colorama.init()
 
 def add_task(task_list, title, due_date=None):
     try:
