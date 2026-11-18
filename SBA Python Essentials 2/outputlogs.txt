@@ -1,0 +1,175 @@
+Welcome to the To-Do List App!
+No existing task file found. Starting with an empty task list.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: a
+
+Enter the task: homework
+Enter the due date (YYYY-MM-DD) or leave blank for no due date: 
+Task 'homework' added without a due date.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Pending - Due: No due date 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: a
+
+Enter the task: Final exam
+Enter the due date (YYYY-MM-DD) or leave blank for no due date: 2026-11-20
+Task 'Final exam' added with due date 2026-11-20.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Pending - Due: No due date 
+1. Final exam - Pending - Due: 2026-11-20 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: c
+
+0. homework - Pending - Due: No due date 
+1. Final exam - Pending - Due: 2026-11-20 
+Enter the index of the task to mark as completed: 0
+Task 'homework' marked as completed.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Completed - Due: No due date 
+1. Final exam - Pending - Due: 2026-11-20 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: d
+
+0. homework - Completed - Due: No due date 
+1. Final exam - Pending - Due: 2026-11-20 
+Enter the index of the task to delete: 1
+Task 'Final exam' deleted.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Completed - Due: No due date 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: q
+
+Exiting application. Goodbye!
+Would you like to save your tasks to a file? (Y/N): y
+PS C:\Users\Zack\Documents\GitHub\Python-Essentials-Perscholas> python '.\SBA Python Essentials 2\main.py'
+Welcome to the To-Do List App!
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Completed - Due: No due date 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: a
+
+Enter the task: Finals
+Enter the due date (YYYY-MM-DD) or leave blank for no due date: 2028-12-12
+Task 'Finals' added with due date 2028-12-12.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Completed - Due: No due date 
+1. Finals - Pending - Due: 2028-12-12 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: a
+
+Enter the task: Tests
+Enter the due date (YYYY-MM-DD) or leave blank for no due date: 2026-12-10
+Task 'Tests' added with due date 2026-12-10.
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: l
+
+0. homework - Completed - Due: No due date 
+1. Finals - Pending - Due: 2028-12-12 
+2. Tests - Pending - Due: 2026-12-10 
+
+Choose an option:
+A. Add a task
+C. Mark a task as completed
+D. Delete a task
+L. List all tasks
+Q. Quit
+Enter your choice: q
+
+Exiting application. Goodbye!
+Would you like to save your tasks to a file? (Y/N): y
