@@ -26,6 +26,9 @@ def complete_task(task_list, index):
         
         
 def delete_task(task_list, index):
+    #List out tasks before deleting to help user choose the correct index
+    list_tasks(task_list)
+    
     try:
         if 0 <= index < len(task_list):
             task = task_list.pop(index)
