@@ -29,6 +29,7 @@ while True:
     print(colorama.Fore.CYAN + "Q. Quit" + colorama.Style.RESET_ALL)
     
     choice = input("Enter your choice: ").upper()
+    print()
     
     if choice == "A":#Add a task
         task = input("Enter the task: ")
@@ -47,6 +48,9 @@ while True:
         todolist.complete_task(task_list, index)
         
     elif choice == "D":#Delete a task from the list
+        #List the tasks before asking for the index to delete
+        todolist.list_tasks(task_list)
+        
         index = int(input("Enter the index of the task to delete: "))
         todolist.delete_task(task_list, index)
         
