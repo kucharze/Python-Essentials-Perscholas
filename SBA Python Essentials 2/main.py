@@ -21,12 +21,12 @@ except FileNotFoundError:
     
 
 while True:
-    print("\nChoose an option:")
-    print("A. Add a task")
-    print("C. Mark a task as completed")
-    print("D. Delete a task")
-    print("L. List all tasks")
-    print("Q. Quit")
+    print(colorama.Fore.CYAN + "\nChoose an option:" + colorama.Style.RESET_ALL)
+    print(colorama.Fore.CYAN + "A. Add a task" + colorama.Style.RESET_ALL)
+    print(colorama.Fore.CYAN + "C. Mark a task as completed" + colorama.Style.RESET_ALL)
+    print(colorama.Fore.CYAN + "D. Delete a task" + colorama.Style.RESET_ALL)
+    print(colorama.Fore.CYAN + "L. List all tasks" + colorama.Style.RESET_ALL)
+    print(colorama.Fore.CYAN + "Q. Quit" + colorama.Style.RESET_ALL)
     
     choice = input("Enter your choice: ")
     
