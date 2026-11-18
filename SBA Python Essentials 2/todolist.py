@@ -51,4 +51,4 @@ def list_tasks(task_list):
         if task.due_date and task.due_date < datetime.datetime.now():
             overdue = "(Overdue)"
             
-        print(f"{index}. {task.title} - {status} - Due: {due_date} {overdue}")
+        print(colorama.Fore.CYAN + f"{index}. {task.title} - {status} - Due: {due_date} {overdue}" + colorama.Style.RESET_ALL)
