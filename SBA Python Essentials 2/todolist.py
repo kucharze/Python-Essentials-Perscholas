@@ -26,8 +26,6 @@ def complete_task(task_list, index):
         
         
 def delete_task(task_list, index):
-    #List out tasks before deleting to help user choose the correct index
-    list_tasks(task_list)
     
     try:
         if 0 <= index < len(task_list):
@@ -36,7 +34,7 @@ def delete_task(task_list, index):
         else:
             print(colorama.Fore.RED + "Invalid task index." + colorama.Style.RESET_ALL)
     except Exception as e:
-        #For Catching invalid indax errors and other exceptions
+        #For Catching invalid index errors and other exceptions
         print(colorama.Fore.RED + f"Error deleting task: {e}" + colorama.Style.RESET_ALL)
 
 
