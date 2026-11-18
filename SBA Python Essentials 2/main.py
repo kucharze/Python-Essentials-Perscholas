@@ -46,12 +46,11 @@ while True:
         todolist.list_tasks(task_list)
         
     elif choice == "Q":#Quit the application
-        print("Exiting application. Goodbye!")
+        print(colorama.Fore.GREEN + "Exiting application. Goodbye!" + colorama.Style.RESET_ALL)
         break
     
     else:
-        print("Invalid choice. Please try again.")
-        
+        print(colorama.Fore.RED + "Invalid choice. Please try again." + colorama.Style.RESET_ALL)
 
 try:
     #save the tasks to a file
